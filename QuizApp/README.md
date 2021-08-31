@@ -1,6 +1,5 @@
 # QuizApp / Aplicacion de preguntas
 
-
 ## Caracteristicas:
 * Las preguntas van a ser aleatorias
 * Integrar un contador

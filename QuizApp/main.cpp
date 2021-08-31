@@ -1,13 +1,15 @@
-// ======================================
-// Fecha de creacion -> 31/08/2021
-// Diego Alonso Narvaez Zapata
-// ======================================
+/*
+ * Fecha de creacion -> 31/08/2021
+ * Diego Alonso Narvaez Zapata
+ * Punto de entrada de la aplicacion
+ */
 #include <iostream>
 #include <time.h>
 #include "gotoxy.h"
 #include "PyR.h"
 using std::cout;
 using std::endl;
+
 
 //Directorio->lib/Functions.cpp
 void Preguntar();

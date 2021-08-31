@@ -1,8 +1,6 @@
 QuizApp / Aplicacion de preguntas
 
 
-Prueba
-
 Caracteristicas:
 1. Las preguntas son sobre programacion
 2. Las preguntas van a ser aleatorias

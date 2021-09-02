@@ -32,6 +32,7 @@ void EscojerRespuesta(int indiceRespuesta)
     respuestaAleatoriaB = 0 + rand() % 3;
     respuestaAleatoriaC = 0 + rand() % 3;
     respuestasAleatorias[4] = respuestaAleatoriaA, respuestaAleatoriaB, respuestaAleatoriaC;
+
     for (int i = 0; i < 3; i++)
     {
         if (respuestasAleatorias[i] != indiceRespuesta)
@@ -51,7 +52,6 @@ void EscojerRespuesta(int indiceRespuesta)
             }
             break;
         }
-
     }
 
 

@@ -31,9 +31,6 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PyR.h">
-      <Filter>Archivos de origen\lib</Filter>
-    </ClInclude>
     <ClInclude Include="gotoxy.h">
       <Filter>Archivos de origen\lib</Filter>
     </ClInclude>

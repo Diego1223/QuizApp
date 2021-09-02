@@ -24,6 +24,9 @@
     <ClCompile Include="Functions.cpp">
       <Filter>Archivos de origen\lib</Filter>
     </ClCompile>
+    <ClCompile Include="prueba.cpp">
+      <Filter>Archivos de origen\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.md">

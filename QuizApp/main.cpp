@@ -17,6 +17,8 @@ int main()
 	cout << "Bienvenido" << endl;
 	cout << "Contesta las siguientes preguntas" << endl;
 	
+
+
 	
 	system("PAUSE");
 	return EXIT_SUCCESS;

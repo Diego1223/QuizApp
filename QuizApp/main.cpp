@@ -5,7 +5,6 @@
  * Brandon Herrera
  */
 #include <iostream>
-#include <time.h>
 #include "gotoxy.h"
 using std::cout;
 using std::endl;
@@ -13,10 +12,9 @@ using std::endl;
 
 int main()
 {
-	//system("color f5");
-	cout << "Bienvenido" << endl;
-	cout << "Contesta las siguientes preguntas" << endl;
-	
+	system("cls");
+	gotoxy(45, 2);
+	cout << "Bienvenido a Pregunta2" << endl;
 
 
 	

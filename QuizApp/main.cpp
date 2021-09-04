@@ -5,19 +5,13 @@
  * Brandon Herrera
  */
 #include <iostream>
-#include "gotoxy.h"
+#include "MenuPrincipal.h"
+#include <conio.h>
 using std::cout;
 using std::endl;
 
-
 int main()
 {
-	system("cls");
-	gotoxy(45, 2);
-	cout << "Bienvenido a Pregunta2" << endl;
-
-
-	
-	system("PAUSE");
+	MenuPrincipal();
 	return EXIT_SUCCESS;
 }

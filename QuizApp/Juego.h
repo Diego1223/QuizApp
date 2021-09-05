@@ -4,7 +4,7 @@
 struct Logica
 {
 	std::string preguntas[50] = {
-		"Que es un compilador?"
+		"Que es un compilador?",
 		"Lenguaje que consiste de ceros y unos",
 		"Lenguaje de programacion creado en 1979 por Bjarne Stroustrup",
 		"Lenguaje de programacion creado en 1996 por la empresa Sun Microsystems"

@@ -19,7 +19,7 @@ int CuerpoMenu(const char* titulo, const char* opciones[], int numeroOpciones)
 	do {
 		system("cls");
 
-		gotoxy(5, 3 + opcionSeleccionada); cout << "=>";
+		gotoxy(5, 3 + opcionSeleccionada); cout << "==>";
 
 		gotoxy(15, 2); cout << titulo;
 
@@ -84,14 +84,11 @@ void MenuPrincipal()
 				//Crear una funcion para ir al juego
 				break;
 			case 2:
-				//Crear una funcion para ver como se jueg
+				//Crear una funcion para ver como se juega
 				break;
 			case 3:
 				repite = false;
 				break;
 		}
 	} while (repite);
-
-
 }
-

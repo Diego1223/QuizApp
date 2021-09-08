@@ -10,7 +10,8 @@ void OcultarCursor()
 	//cci.dwSize = 50; -> Nos sirve para poner el tamano del cursor
 	//cci.bVisible = FALSE; //No se ve el cursor
 	CONSOLE_CURSOR_INFO cci;
+	cci.dwSize = 1;
 	cci.bVisible = FALSE;
 	//Sirve para manipular el cursor 
-	SetConsoleCursorInfo(hCon, &cci);
+	SetConsoleCursorInfo(hCon, &(cci));
 }

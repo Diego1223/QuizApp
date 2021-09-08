@@ -2,6 +2,7 @@
 #include <conio.h>
 #include "gotoxy.h"
 #include "Juego.h"
+#include "Ocursor.h"
 using namespace std;
 
 //Estos son los codigos ASCII correspondientes a cada tecla
@@ -30,6 +31,7 @@ int CuerpoMenu(const char* titulo, const char* opciones[], int numeroOpciones)
 		}
 
 		do {
+			OcultarCursor();
 			tecla = _getch();
 		} while ((tecla != TECLA_ARRIBA) && (tecla != TECLA_ABAJO) && (tecla != ENTER));
 
@@ -76,7 +78,6 @@ void MenuPrincipal()
 		"Jugar", "Como se juega", "Salir"
 	};
 	int numeroOpciones = 3;
-
 	do {
 		opcion = CuerpoMenu(titulo, opciones, numeroOpciones);
 		switch (opcion)

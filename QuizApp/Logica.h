@@ -22,7 +22,9 @@ struct Logica
 		"Sistema operativo creado por microsoft",
 		"Linux es...",
 		"Es uno de los editores de texto mas antiguos",
-		"Lenguajes en el que fue creado el kernel de linux"
+		"Lenguajes en el que fue creado el kernel de linux",
+		"Significado de \"IDE\"",
+		"C/C++ es un lenguaje..."
 	};
 
 	std::string respuestas[LEN] = {
@@ -41,6 +43,6 @@ struct Logica
 		"Un kernel",
 		"VIM"
 		"C, C++, assembly",
-
+		"De proposito general"
 	};
 }pregunta, respuesta;

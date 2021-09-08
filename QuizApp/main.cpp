@@ -5,10 +5,9 @@
  * Brandon Herrera
  */
 #include <iostream>
-#include "MenuPrincipal.h"
 #include <conio.h>
-using std::cout;
-using std::endl;
+#include "MenuPrincipal.h"
+
 
 int main()
 {

@@ -1,4 +1,5 @@
 #include <Windows.h>
+
 /*
  * Nos permite manipular el cursor en las coordenadas X y Y
  */

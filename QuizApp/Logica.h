@@ -7,6 +7,8 @@ struct Logica
 {
 	//Al indice 0 del arreglo preguntas, le corresponde el indice 0 del arreglo respuesta
 	//Puedes ir a el archivo prueba.cpp y checar la logica
+
+	//Son 17 preguntas 
 	std::string preguntas[LEN] = {
 		"Que es un compilador?",
 		"Lenguaje que consiste de ceros y unos",
@@ -24,7 +26,7 @@ struct Logica
 		"Es uno de los editores de texto mas antiguos",
 		"Lenguajes en el que fue creado el kernel de linux",
 		"Significado de \"IDE\"",
-		"C/C++ es un lenguaje..."
+		"C/C++ es un lenguaje...",
 	};
 
 	std::string respuestas[LEN] = {
@@ -41,8 +43,9 @@ struct Logica
 		"MacOS",
 		"Windows",
 		"Un kernel",
-		"VIM"
+		"VIM",
 		"C, C++, assembly",
-		"De proposito general"
+		"De proposito general",
 	};
 }pregunta, respuesta;
+

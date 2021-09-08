@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include "gotoxy.h"
+#include "Juego.h"
 using namespace std;
 
 //Estos son los codigos ASCII correspondientes a cada tecla
@@ -81,7 +82,7 @@ void MenuPrincipal()
 		switch (opcion)
 		{
 			case 1:
-				//Crear funcion para empezar el juego
+				Juego();
 				break;
 			case 2:
 				//Crear una funcion para ver como se juega

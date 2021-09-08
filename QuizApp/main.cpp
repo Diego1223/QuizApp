@@ -8,7 +8,6 @@
 #include <conio.h>
 #include "MenuPrincipal.h"
 
-
 int main()
 {
 	MenuPrincipal();

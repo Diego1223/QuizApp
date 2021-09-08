@@ -2,11 +2,13 @@
 #include <time.h>
 #include "Logica.h" //En este archivo se encuentran las preguntas y las respuestas
 using std::cout;
+using std::cin;
 
 void Respuestas(int indiceRespuesta)
 {
 	int respuestaAleatoriaA, respuestaAleatoriaB, respuestaAleatoriaC;
 	int respuestasAleatorias[5];
+	char opcion;
 
 	//Genera un numero aleatorio entre 0 y 17, esto para cada inciso
 	respuestaAleatoriaA = 0 + rand() % 17;

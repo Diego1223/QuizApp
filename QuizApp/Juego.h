@@ -1,15 +1,15 @@
-#include <iostream>
+﻿#include <iostream>
 #include <time.h>
 #include "Logica.h" //En este archivo se encuentran las preguntas y las respuestas
 using std::cout;
 using std::cin;
 
+
 void Respuestas(int indiceRespuesta)
 {
 	int respuestaAleatoriaA, respuestaAleatoriaB, respuestaAleatoriaC;
 	int respuestasAleatorias[5];
-	char opcion;
-
+	
 	//Genera un numero aleatorio entre 0 y 17, esto para cada inciso
 	respuestaAleatoriaA = 0 + rand() % 17;
 	respuestaAleatoriaB = 0 + rand() % 17;
@@ -78,6 +78,7 @@ void Respuestas(int indiceRespuesta)
 		}
 	}
 	
+	system("color 7");
 	cout << "a.- " << respuesta.respuestas[respuestaAleatoriaA] << '\n';
 	cout << "b.- " << respuesta.respuestas[respuestaAleatoriaB] << '\n';
 	cout << "c.- " << respuesta.respuestas[respuestaAleatoriaC] << '\n';
@@ -96,12 +97,13 @@ void Juego()
 		//genera un numero aleatorio entre 0 y 8
 		preguntaAleatoria = 0 + rand() % 8;
 		indiceDeRespuesta = preguntaAleatoria;
+		
 		cout << i << ". " << pregunta.preguntas[preguntaAleatoria] << '\n';
-		cout << '\n';
 
-		cout << "Eligue una opcion" << '\n';
-		Respuestas(indiceDeRespuesta);
 		cout << '\n';
+		cout << "Eligue una opcion: " << '\n';
+		Respuestas(indiceDeRespuesta);
+		cout << '\n' << '\n';
 	}
 	system("pause>0");
 }

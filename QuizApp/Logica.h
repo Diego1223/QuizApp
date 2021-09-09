@@ -35,7 +35,7 @@ struct Logica
 		"Lenguaje C++",
 		"Lenguaje java",
 		"Python",
-		"Modelo o un estilo de programación que nos da unas guías sobre cómo trabajar con él",
+		"Modelo o un estilo de programacion que nos da unas guias sobre como trabajar con el",
 		"Se basa en el concepto de clases y objetos",
 		"Javascript",
 		"Unidad central de procesamiento",

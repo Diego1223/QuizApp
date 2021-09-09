@@ -11,9 +11,9 @@ void Respuestas(int indiceRespuesta)
 	int respuestasAleatorias[5];
 	
 	//Genera un numero aleatorio entre 0 y 17, esto para cada inciso
-	respuestaAleatoriaA = 0 + rand() % 17;
-	respuestaAleatoriaB = 0 + rand() % 17;
-	respuestaAleatoriaC = 0 + rand() % 17;
+	respuestaAleatoriaA = 0 + rand() % 16;
+	respuestaAleatoriaB = 0 + rand() % 16;
+	respuestaAleatoriaC = 0 + rand() % 16;
 	//Almacenamos los datos de cada inciso
 	respuestasAleatorias[3] = respuestaAleatoriaA, respuestaAleatoriaB, respuestaAleatoriaC;
 
@@ -50,7 +50,7 @@ void Respuestas(int indiceRespuesta)
 
 	if (respuestaAleatoriaA == respuestaAleatoriaB)
 	{
-		nuevaRespuestaAleatoria = 0 + rand() % 17;
+		nuevaRespuestaAleatoria = 0 + rand() % 16;
 
 		if (respuestaAleatoriaA != nuevaRespuestaAleatoria)
 		{
@@ -60,7 +60,7 @@ void Respuestas(int indiceRespuesta)
 
 	if (respuestaAleatoriaB == respuestaAleatoriaC)
 	{
-		nuevaRespuestaAleatoria = 0 + rand() % 17;
+		nuevaRespuestaAleatoria = 0 + rand() % 16;
 
 		if (respuestaAleatoriaB != nuevaRespuestaAleatoria)
 		{
@@ -70,7 +70,7 @@ void Respuestas(int indiceRespuesta)
 
 	if (respuestaAleatoriaC == respuestaAleatoriaA)
 	{
-		nuevaRespuestaAleatoria = 0 + rand() % 17;
+		nuevaRespuestaAleatoria = 0 + rand() % 16;
 
 		if (respuestaAleatoriaC != nuevaRespuestaAleatoria)
 		{
@@ -78,7 +78,6 @@ void Respuestas(int indiceRespuesta)
 		}
 	}
 	
-	system("color 7");
 	cout << "a.- " << respuesta.respuestas[respuestaAleatoriaA] << '\n';
 	cout << "b.- " << respuesta.respuestas[respuestaAleatoriaB] << '\n';
 	cout << "c.- " << respuesta.respuestas[respuestaAleatoriaC] << '\n';
@@ -95,9 +94,10 @@ void Juego()
 	for (int i = 1; i <= 8; i++)
 	{
 		//genera un numero aleatorio entre 0 y 8
-		preguntaAleatoria = 0 + rand() % 8;
+		preguntaAleatoria = 0 + rand() % 16;
 		indiceDeRespuesta = preguntaAleatoria;
-		
+		int preguntas[9] = { preguntaAleatoria };
+
 		cout << i << ". " << pregunta.preguntas[preguntaAleatoria] << '\n';
 
 		cout << '\n';
@@ -107,3 +107,17 @@ void Juego()
 	}
 	system("pause>0");
 }
+/*Prueba 1
+for (int j = 0; j < 9; j++)
+{
+	if (preguntas[j] == preguntas[j + 1])
+	{
+		int nuevoAleatorio = 0 + rand() % 16;
+
+		if (nuevoAleatorio != preguntaAleatoria)
+		{
+			preguntaAleatoria = nuevoAleatorio;
+			indiceDeRespuesta = nuevoAleatorio;
+		}
+	}
+}*/

@@ -4,7 +4,6 @@
 using std::cout;
 using std::cin;
 
-
 void Respuestas(int indiceRespuesta)
 {
 	int respuestaAleatoriaA, respuestaAleatoriaB, respuestaAleatoriaC;
@@ -74,7 +73,7 @@ void Respuestas(int indiceRespuesta)
 
 		if (respuestaAleatoriaC != nuevaRespuestaAleatoria)
 		{
-			respuestaAleatoriaC = nuevaRespuestaAleatoria;
+			respuestaAleatoriaA = nuevaRespuestaAleatoria;
 		}
 	}
 	
@@ -96,8 +95,8 @@ void Juego()
 		//genera un numero aleatorio entre 0 y 8
 		preguntaAleatoria = 0 + rand() % 16;
 		indiceDeRespuesta = preguntaAleatoria;
-		int preguntas[9] = { preguntaAleatoria };
 
+		
 		cout << i << ". " << pregunta.preguntas[preguntaAleatoria] << '\n';
 
 		cout << '\n';
@@ -107,17 +106,3 @@ void Juego()
 	}
 	system("pause>0");
 }
-/*Prueba 1
-for (int j = 0; j < 9; j++)
-{
-	if (preguntas[j] == preguntas[j + 1])
-	{
-		int nuevoAleatorio = 0 + rand() % 16;
-
-		if (nuevoAleatorio != preguntaAleatoria)
-		{
-			preguntaAleatoria = nuevoAleatorio;
-			indiceDeRespuesta = nuevoAleatorio;
-		}
-	}
-}*/

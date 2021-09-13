@@ -3,6 +3,7 @@
 #include "gotoxy.h"
 #include "Juego.h"
 #include "Ocursor.h"
+#include "ComoJugar.h"
 using namespace std;
 
 //Estos son los codigos ASCII correspondientes a cada tecla
@@ -21,13 +22,13 @@ int CuerpoMenu(const char* titulo, const char* opciones[], int numeroOpciones)
 	do {
 		system("cls");
 
-		gotoxy(5, 3 + opcionSeleccionada); cout << "==>";
+		gotoxy(20, 3 + opcionSeleccionada); cout << "==>";
 
-		gotoxy(15, 2); cout << titulo;
+		gotoxy(30, 2); cout << titulo;
 
 		for (int i = 0; i < numeroOpciones; i++)
 		{
-			gotoxy(10, 4 + i); cout << i + 1 << ".- " << &*(opciones[i]);
+			gotoxy(25, 4 + i); cout << i + 1 << ".- " << &*(opciones[i]);
 		}
 
 		do {
@@ -86,7 +87,7 @@ void MenuPrincipal()
 				Juego();
 				break;
 			case 2:
-				//Crear una funcion para ver como se juega
+				ComoJugar();
 				break;
 			case 3:
 				repite = false;

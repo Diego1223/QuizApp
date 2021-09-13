@@ -96,7 +96,7 @@ void Juego()
 		preguntaAleatoria = 0 + rand() % 16;
 		indiceDeRespuesta = preguntaAleatoria;
 
-		
+		 
 		cout << i << ". " << pregunta.preguntas[preguntaAleatoria] << '\n';
 
 		cout << '\n';

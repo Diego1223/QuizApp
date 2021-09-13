@@ -7,7 +7,16 @@
 #define AMAY 65
 #define BMIN 98
 #define BMAY 66
+#define M 77
 
+void CambiarColorPalabras(std::string str, std::string color)
+{
+	HANDLE hCon;
+	hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+	DWORD bytesWritten = 0;
+	SetConsoleTextAttribute(hCon, FOREGROUND_GREEN);
+	WriteFile(hCon, str.c_str(), str.size(), &bytesWritten, NULL);
+}
 
 void ComoJugar()
 {
@@ -36,5 +45,32 @@ void ComoJugar()
 	if ((tecla == BMIN) || (tecla == BMAY))
 	{
 		Juego();
+	}
+
+	//Seguir modificando el easter egg
+	//Bug -> Acepta entradas por teclado
+	if (tecla == M)
+	{
+		system("cls");
+		HANDLE hCon;
+		hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+		DWORD bytesWritten = 0;
+		cout << "\a";
+
+		gotoxy(48, 13);
+		std::string mex1 = "Viva ";
+		SetConsoleTextAttribute(hCon, FOREGROUND_GREEN);
+		WriteFile(hCon, mex1.c_str(), mex1.size(), &bytesWritten, NULL);
+
+		std::string mex2 = "Mexico ";
+		//Le ponemos 7, porque es el numero del color blanco
+		SetConsoleTextAttribute(hCon, 7);
+		WriteFile(hCon, mex2.c_str(), mex2.size(), &bytesWritten, NULL);
+
+
+		std::string mex3 = "Cabrones!";
+		SetConsoleTextAttribute(hCon, FOREGROUND_RED);
+		WriteFile(hCon, mex3.c_str(), mex3.size(), &bytesWritten, NULL);
+		cin.get();
 	}
 }

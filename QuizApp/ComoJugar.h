@@ -71,6 +71,7 @@ void ComoJugar()
 		std::string mex3 = "Cabrones!";
 		SetConsoleTextAttribute(hCon, FOREGROUND_RED);
 		WriteFile(hCon, mex3.c_str(), mex3.size(), &bytesWritten, NULL);
-		cin.get();
+		Sleep(2000);
+		exit(EXIT_SUCCESS);
 	}
 }

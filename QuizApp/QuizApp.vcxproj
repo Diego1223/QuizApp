@@ -143,9 +143,6 @@
     <ClCompile Include="prueba.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="README.md" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="ComoJugar.h" />
     <ClInclude Include="gotoxy.h" />
     <ClInclude Include="Juego.h" />

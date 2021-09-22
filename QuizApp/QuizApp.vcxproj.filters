@@ -13,19 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de recursos\test">
+      <UniqueIdentifier>{268ac36c-576a-4d0b-bd8b-c9b855601d9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="prueba.cpp">
-      <Filter>Archivos de recursos</Filter>
+      <Filter>Archivos de recursos\test</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="README.md">
-      <Filter>Archivos de origen</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gotoxy.h">

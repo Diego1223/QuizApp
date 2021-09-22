@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string.h>
+using std::cout;
+using std::cin;
 
 #define LEN 50
 
@@ -8,7 +10,7 @@ struct Logica
 	//Al indice 0 del arreglo preguntas, le corresponde el indice 0 del arreglo respuesta
 	//Puedes ir a el archivo prueba.cpp y checar la logica
 
-	//Son 17 preguntas 
+	//Son 16 preguntas 
 	std::string preguntas[LEN] = {
 		"Que es un compilador?",
 		"Lenguaje que consiste de ceros y unos",
@@ -45,7 +47,7 @@ struct Logica
 		"Un kernel",
 		"VIM",
 		"C, C++, assembly",
+		"Entorno de desarrollo integrado",
 		"De proposito general",
 	};
 }pregunta, respuesta;
-

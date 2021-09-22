@@ -9,14 +9,6 @@
 #define BMAY 66
 #define M 77
 
-void CambiarColorPalabras(std::string str, std::string color)
-{
-	HANDLE hCon;
-	hCon = GetStdHandle(STD_OUTPUT_HANDLE);
-	DWORD bytesWritten = 0;
-	SetConsoleTextAttribute(hCon, FOREGROUND_GREEN);
-	WriteFile(hCon, str.c_str(), str.size(), &bytesWritten, NULL);
-}
 
 void ComoJugar()
 {

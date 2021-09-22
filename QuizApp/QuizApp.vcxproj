@@ -143,10 +143,12 @@
     <ClCompile Include="prueba.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Alternativas.h" />
     <ClInclude Include="ComoJugar.h" />
     <ClInclude Include="gotoxy.h" />
     <ClInclude Include="Juego.h" />
     <ClInclude Include="Logica.h" />
+    <ClInclude Include="LogicaPrueba.h" />
     <ClInclude Include="MenuPrincipal.h" />
     <ClInclude Include="Ocursor.h" />
   </ItemGroup>
